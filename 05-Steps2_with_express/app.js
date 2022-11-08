@@ -1,15 +1,22 @@
 import express from "express";
 const app = express();
 const port = process.env.PORT || 3000;
-
-
 app.get("/", (req, res) => {
     res.type("text/plain");
     res.send("Meadowlark Travel");
 });
-app.get("/about", (req, res) => {
+
+app.get("/about/*", (req, res) => {
     res.type("text/plain");
     res.send("About Meadowlark Travel");
+});
+app.get("/about/contact", (req, res) => {
+    res.type("text/plain");
+    res.send("Contact Meadowlark Travel");
+});
+app.get("/about/directions", (req, res) => {
+    res.type("text/plain");
+    res.send("Directions Meadowlark Travel");
 });
 // custom 404 page
 app.use((req, res) => {
