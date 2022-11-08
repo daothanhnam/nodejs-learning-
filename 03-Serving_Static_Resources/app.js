@@ -21,14 +21,14 @@ const server = http.createServer((req, res) => {
             serveStaticFile(res, "/public/about.html", "text/html");
             break;
         case "/img/logo.png":
-            serveStaticFile(res, "../img/logo.png", "image/png");
+            serveStaticFile(res, "/img/logo.png", "image/png");
             break;
         default:
             serveStaticFile(res, "/public/404.html", "text/html", 404);
             break;
     }
 });
-server.listen(port, () =>
+server.listen(3000, () =>
     console.log(
         `server started on
 port ${port}; ` + "press Ctrl-C to terminate...."
