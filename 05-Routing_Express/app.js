@@ -5,7 +5,6 @@ app.get("/", (req, res) => {
     res.type("text/plain");
     res.send("Meadowlark Travel");
 });
-
 app.get("/about/*", (req, res) => {
     res.type("text/plain");
     res.send("About Meadowlark Travel");
