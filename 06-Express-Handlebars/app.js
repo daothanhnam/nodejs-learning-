@@ -26,7 +26,7 @@ app.get("/about", (req, res) => {
 // custom 404 page
 app.use((req, res) => {
     res.status(404);
-    res.render("500");
+    res.render("404");
 });
 
 // custom 500 page
