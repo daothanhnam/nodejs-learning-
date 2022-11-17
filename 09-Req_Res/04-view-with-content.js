@@ -26,7 +26,7 @@ app.get('/greeting', (req, res) => {
 })
 
 app.get('/set-random-userid', (req, res) => {
-  res.cookie('userid', (Math.random()*10000).toFixed(0))
+  res.cookie('userid', (Math.random() * 10000).toFixed(0))
   res.redirect('/greeting')
 })
 
