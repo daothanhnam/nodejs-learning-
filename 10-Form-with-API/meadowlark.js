@@ -36,8 +36,9 @@ app.use(weatherMiddlware);
 app.get("/", handlers.home);
 
 // handlers for browser-based form submission
+
 app.get("/newsletter-signup", handlers.newsletterSignup);
-app.post("/newsletter-signup/process", handlers.newsletterSignupProcess);
+
 app.get("/newsletter-signup/thank-you", handlers.newsletterSignupThankYou);
 
 // handlers for fetch/JSON form submission
@@ -83,3 +84,4 @@ if (require.main === module) {
 } else {
   module.exports = app;
 }
+  
