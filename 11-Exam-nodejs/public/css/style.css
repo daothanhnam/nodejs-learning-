@@ -1,0 +1,38 @@
+
+.apply-form {
+  margin: 70px auto;
+  max-width: 1100px;
+  width: 100%;
+  
+}
+
+.apply-form label {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.apply-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.apply-input {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+  height: 20px;
+}
+
+.apply-button {
+  outline: none;
+  background: green;
+  color: white;
+  padding: 20px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+}
